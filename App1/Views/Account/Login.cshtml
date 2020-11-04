@@ -1,0 +1,15 @@
+﻿@model LoginModel
+<html>
+<head>
+    <title>Login</title>
+</head>
+<body>
+    <form method="post">
+        <input type="text" name="username" placeholder="User name" value="@Model.UserName" />
+        <input type="password" name="password" placeholder="Password" value="@Model.Password" />
+        <input type="submit" value="Sign In" />
+    </form>
+    <p style="color:red">@Model.ErrorMessage</p>
+
+</body>
+</html>
